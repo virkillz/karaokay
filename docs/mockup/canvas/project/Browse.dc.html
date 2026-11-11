@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Karaokay – Browse artists</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&amp;family=Nunito:wght@600;700;800;900&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#FFF0F6}
+*{box-sizing:border-box}
+button{font:inherit;cursor:pointer}
+a{color:#C8105E}a:hover{color:#9A0B48}
+</style>
+</helmet>
+<div style="min-height: 900px; width: 100%; background: #FFF0F6; color: #1C1646; font-family: 'Nunito', system-ui, sans-serif; font-size: 14px; display: flex; flex-direction: column;">
+
+  <!-- header -->
+  <header style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; padding: 14px 24px;">
+    <div style="display: flex; align-items: center; gap: 8px; margin-right: 12px;">
+      <img src="/_blob/710404612ae84a3bf1577e383db8404e" alt="" style="width: 50px; height: 50px; object-fit: contain; transform: rotate(-8deg);">
+      <span style="font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 30px; letter-spacing: -0.5px;">karao<span style="color: #E0136B;">kay</span></span>
+    </div>
+    <nav aria-label="Sections" style="display: flex; flex-wrap: wrap; gap: 6px; padding: 5px; background: #FFFFFF; border: 2.5px solid #1C1646; border-radius: 999px;">
+      <a href="Main.dc.html" style="text-decoration: none; padding: 8px 16px; border-radius: 999px; color: #1C1646; font-weight: 700;">Sing</a>
+      <a href="Browse.dc.html" style="text-decoration: none; padding: 8px 18px; border-radius: 999px; background: #FFD23F; color: #1C1646; font-weight: 800;">Artists</a>
+      <a href="Browse.dc.html" style="text-decoration: none; padding: 8px 16px; border-radius: 999px; color: #1C1646; font-weight: 700;">Genres</a>
+      <a href="Browse.dc.html" style="text-decoration: none; padding: 8px 16px; border-radius: 999px; color: #1C1646; font-weight: 700;">Playlists</a>
+      <a href="Browse.dc.html" style="text-decoration: none; padding: 8px 16px; border-radius: 999px; color: #1C1646; font-weight: 700;">Favorites</a>
+      <a href="Browse.dc.html" style="text-decoration: none; padding: 8px 16px; border-radius: 999px; color: #1C1646; font-weight: 700;">History</a>
+    </nav>
+    <label style="flex: 1 1 260px; display: flex; align-items: center; gap: 10px; height: 46px; padding: 0 16px; background: #FFFFFF; border: 2.5px solid #1C1646; border-radius: 999px;">
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1C1646" stroke-width="3" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="M20 20l-4.6-4.6"></path></svg>
+      <span style="position: absolute; width: 1px; height: 1px; overflow: hidden;">Search</span>
+      <input type="search" placeholder="Search songs, artists, lyrics…" style="flex: 1 1 auto; min-width: 0; border: 0; outline: 0; background: transparent; font: inherit; font-size: 15px; font-weight: 700; color: #1C1646;">
+      <kbd style="font-family: 'Nunito', sans-serif; font-size: 12px; font-weight: 800; padding: 2px 7px; border: 2px solid #1C1646; border-radius: 7px;">⌘K</kbd>
+    </label>
+    <a href="Import.dc.html" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; height: 46px; padding: 0 20px; background: #E0136B; color: #FFFFFF; font-weight: 800; border: 2.5px solid #1C1646; border-radius: 999px; box-shadow: 4px 4px 0 #1C1646;">
+      <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V4M7 9l5-5 5 5M4 15v4a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-4"></path></svg>
+      Import
+    </a>
+  </header>
+
+  <!-- lyrics strip: the song keeps singing while you browse -->
+  <section aria-label="Lyrics strip" style="margin: 2px 24px 0 24px; position: relative; overflow: hidden; display: flex; flex-wrap: wrap; align-items: center; gap: 14px 24px; padding: 14px 22px; min-height: 120px; background: #3A1FA0; color: #FFFFFF; border: 3px solid #1C1646; border-radius: 26px; box-shadow: 6px 6px 0 #1C1646;">
+    <img src="/_blob/9eaa3f3370e7f039edd26fbfba27bbfa" alt="" aria-hidden="true" style="position: absolute; right: 250px; top: -18px; width: 58px; height: 58px; transform: rotate(18deg);">
+    <img src="/_blob/1b81d8bf31dd6fa9cd7db7646a40a8c7" alt="Cover of Midnight Carousel" style="width: 64px; height: 64px; border-radius: 16px; border: 3px solid #1C1646; object-fit: cover;">
+    <div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 2px;">
+      <span style="font-size: 12px; font-weight: 800; color: #DCD3FF;">Midnight Carousel · The Paper Lanterns · <span style="color: #FFD23F; font-weight: 900;">B♭ +2</span></span>
+      <p style="margin: 0; font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 34px; line-height: 1.1; background: linear-gradient(90deg, #FFD23F 0 {{sweepPct}}%, #FFFFFF {{sweepPct}}% 100%); -webkit-background-clip: text; background-clip: text; color: transparent; filter: drop-shadow(3px 3px 0 #1C1646);">Round and round the lights go by</p>
+      <p style="margin: 0; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 20px; color: #B9A9FF;">and I'm still holding on to you</p>
+    </div>
+    <div style="display: flex; align-items: center; gap: 8px;">
+      <button aria-label="Pause" style="width: 50px; height: 50px; display: grid; place-items: center; background: #FFD23F; color: #1C1646; border: 3px solid #1C1646; border-radius: 50%; box-shadow: 3px 3px 0 #1C1646;"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><rect x="5" y="4" width="5" height="16" rx="1.6"></rect><rect x="14" y="4" width="5" height="16" rx="1.6"></rect></svg></button>
+      <button aria-label="Skip to next song" style="width: 42px; height: 42px; display: grid; place-items: center; background: #FFFFFF; color: #1C1646; border: 2.5px solid #1C1646; border-radius: 50%;"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M4 5.5v13L15 12z"></path><rect x="16.8" y="5" width="3.2" height="14" rx="1.2"></rect></svg></button>
+      <span style="margin-left: 6px; font-weight: 800; font-variant-numeric: tabular-nums; color: #DCD3FF;">1:32 / 3:48</span>
+      <a href="Main.dc.html" style="margin-left: 8px; text-decoration: none; display: inline-flex; align-items: center; height: 40px; padding: 0 16px; border-radius: 999px; background: #FFFFFF; color: #1C1646; font-weight: 800; border: 2.5px solid #1C1646;">Back to Sing</a>
+    </div>
+    <div aria-hidden="true" style="position: absolute; left: 0; bottom: 0; height: 5px; width: 40%; background: #FF7EB6;"></div>
+  </section>
+
+  <!-- artists -->
+  <main style="flex: 1 1 auto; padding: 22px 24px 26px 24px; display: flex; flex-direction: column; gap: 16px;">
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px;">
+      <h1 style="margin: 0; font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 34px;">Artists</h1>
+      <span style="padding: 4px 12px; border-radius: 999px; background: #FFFFFF; border: 2px solid #1C1646; font-weight: 900;">137</span>
+      <div style="flex: 1 1 0px;"></div>
+      <div role="group" aria-label="Jump to letter" style="display: flex; flex-wrap: wrap; gap: 4px;">
+        <sc-for list="{{letters}}" as="l" hint-placeholder-count="12">
+          <button style="width: 30px; height: 30px; border-radius: 9px; border: 2px solid #1C1646; background: {{l.bg}}; color: #1C1646; font-weight: 900; font-size: 13px;">{{l.ch}}</button>
+        </sc-for>
+      </div>
+    </div>
+    <ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px;">
+      <sc-for list="{{artists}}" as="a" hint-placeholder-count="10">
+        <li style="display: flex; align-items: center; gap: 14px; padding: 14px; background: {{a.bg}}; border: 3px solid #1C1646; border-radius: 22px; box-shadow: 5px 5px 0 #1C1646; transform: {{a.tilt}};">
+          <img src="{{a.cover}}" alt="" style="width: 66px; height: 66px; border-radius: 50%; border: 3px solid #1C1646; object-fit: cover; flex: none;">
+          <div style="min-width: 0; display: flex; flex-direction: column; gap: 2px;">
+            <span style="font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 19px; line-height: 1.1;">{{a.name}}</span>
+            <span style="font-weight: 800; font-size: 13px; color: #3A3260;">{{a.count}} songs · {{a.genre}}</span>
+          </div>
+        </li>
+      </sc-for>
+    </ul>
+  </main>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"sweepPct":{"editor":"range","default":58,"min":0,"max":100,"step":1,"unit":"%","section":"Lyrics"},"$preview":{"width":1440,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const C = {
+      carousel: '/_blob/1b81d8bf31dd6fa9cd7db7646a40a8c7',
+      after: '/_blob/1eb9b9d41f4764aa362de20bb11c2be3',
+      maple: '/_blob/8f8f3c97f14b1145756aae89515090b4',
+      neon: '/_blob/179605b00519eb201b2a9c97d6031172',
+      tide: '/_blob/35defc56f08987a14fc85240bf0cbf48',
+      glass: '/_blob/2e53585e63b9078722b3202669f88314',
+      onemore: '/_blob/f6b799fc441154a32f6c1433c956c181',
+      paper: '/_blob/404e7bd37ceae250b849d1f96a1bdf65'
+    };
+    const tints = ['#FFFFFF', '#FFE3EF', '#FFF3B8', '#D6F7F2', '#EDE7FF'];
+    const tilts = ['rotate(-1deg)', 'none', 'rotate(1deg)', 'none', 'rotate(-0.6deg)'];
+    const artists = [
+      ['Dusty Hollow Band', 9, 'Country', C.maple],
+      ['Halden & Rue', 6, 'Pop', C.onemore],
+      ['Juno Marlowe', 14, 'Pop', C.paper],
+      ['Kilo Static', 11, 'Rock', C.neon],
+      ['Nora Vale', 17, 'Ballad', C.after],
+      ['The Midnight Ferry', 8, 'R&B', C.tide],
+      ['The Paper Lanterns', 12, 'Pop', C.carousel],
+      ['Saltwater Choir', 5, 'Indie', C.glass],
+      ['Vera & the Volts', 7, 'Rock', C.neon],
+      ['Willow Park', 10, 'Country', C.maple]
+    ].map((a, i) => ({ name: a[0], count: a[1], genre: a[2], cover: a[3], bg: tints[i % 5], tilt: tilts[i % 5] }));
+    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ#'.split('').map(ch => ({ ch, bg: ch === 'A' ? '#FFD23F' : '#FFFFFF' }));
+    return { sweepPct: this.props.sweepPct ?? 58, artists, letters };
+  }
+}
+</script>
+</body>
+</html>

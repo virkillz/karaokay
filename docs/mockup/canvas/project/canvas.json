@@ -1,0 +1,18 @@
+{
+  "v": 3,
+  "createdOnFiles": { "v": 1, "at": "2026-11-11T06:30:00Z" },
+  "title": "Karaokay Pop Mockup",
+  "launch": { "view": "canvas" },
+  "pages": [],
+  "boards": {
+    "Main.dc.html": { "x": 0, "y": 0, "w": 1440, "h": 900, "title": "1 · Sing mode (default)", "expand": "fill" },
+    "Focus.dc.html": { "x": 1520, "y": 0, "w": 1440, "h": 900, "title": "2 · Focus mode (L)", "expand": "fill" },
+    "Browse.dc.html": { "x": 0, "y": 1020, "w": 1440, "h": 900, "title": "3 · Browse mode with lyrics strip", "expand": "fill" },
+    "Import.dc.html": { "x": 1520, "y": 1020, "w": 1440, "h": 900, "title": "4 · Empty library + Import", "expand": "fill" }
+  },
+  "order": ["Main.dc.html", "Focus.dc.html", "Browse.dc.html", "Import.dc.html"],
+  "notes": {
+    "title": { "x": 0, "y": -300, "text": "Karaokay — candy pop, one screen", "kind": "title1", "maxW": 2960 }
+  },
+  "designSystems": []
+}

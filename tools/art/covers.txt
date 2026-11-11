@@ -1,0 +1,8 @@
+c_carousel|square album cover art, a glowing pastel carousel at night under fireworks, bold flat pop-art illustration, vibrant pink yellow and teal, no text, no letters
+c_aftermidnight|square album cover art, a dreamy girl silhouette on a rooftop with a huge pink moon, bold flat pop-art illustration, vibrant colors, no text, no letters
+c_maple|square album cover art, a cozy small-town street with a pickup truck and maple trees at golden hour, bold flat pop-art illustration, warm vibrant colors, no text, no letters
+c_neon|square album cover art, an electric guitar with neon lightning bolts on a purple background, bold flat pop-art illustration, vibrant colors, no text, no letters
+c_tide|square album cover art, a stylised turquoise wave with a setting sun, bold flat pop-art illustration, vibrant colors, no text, no letters
+c_glass|square album cover art, a sailboat in a glass bottle with sparkles, bold flat pop-art illustration, vibrant orange and blue, no text, no letters
+c_onemore|square album cover art, a disco dance floor with colorful tiles and roller skates, bold flat pop-art illustration, vibrant colors, no text, no letters
+c_paper|square album cover art, colorful paper airplanes flying across a bright sky with hearts, bold flat pop-art illustration, vibrant colors, no text, no letters
